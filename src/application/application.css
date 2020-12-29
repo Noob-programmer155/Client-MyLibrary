@@ -1,0 +1,47 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.borderPane1{
+	-fx-background-color: linear-gradient(from 0% 100% to 0% 0%, #331a80 0%, #99b3ff 100%);
+}
+
+.background_login{
+	-fx-background-image: url(Image/burnaby-library.jpg); 
+	-fx-background-repeat: stretch; 
+	-fx-background-size: 1240px 720px
+}
+
+.text-area{
+	-fx-background-color: #666666;
+	-fx-border-color: #434343;
+	-fx-border-radius: 0 20 0 20;
+	-fx-background-radius: 0 20 0 20;
+}
+
+.text-area .scroll-pane{
+	-fx-background-color: rgba(1,1,1,0);
+}
+
+.text-area .scroll-pane .viewport{
+	-fx-background-color: rgba(1,1,1,0);
+}
+
+.text-area .content{
+	-fx-background-color: rgba(1,1,1,0);
+}
+
+.outline.label .text{
+	-fx-fill: white;
+	-fx-stroke: #247dd6;
+	-fx-stroke-width: 5px;
+	-fx-stroke-line-cap:round;
+	-fx-stroke-type:outside;
+	-fx-stroke-line-join:round;
+}
+
+.outline1.label .text{
+	-fx-fill: white;
+	-fx-stroke: #45b783;
+	-fx-stroke-width: 5px;
+	-fx-stroke-line-cap:round;
+	-fx-stroke-type:outside;
+	-fx-stroke-line-join:round;
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+
+<fx:root prefHeight="720.0" prefWidth="1240.0" styleClass="background_login" stylesheets="@application.css" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<top>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="0.0" prefWidth="1240.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff9d" height="181.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1240.0">
+                     <effect>
+                        <GaussianBlur radius="46.87" />
+                     </effect>
+                  </Rectangle>
+                  <TextFlow lineSpacing="10.0" prefHeight="127.0" prefWidth="964.0" textAlignment="CENTER" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="138.0" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="50.0">
+                     <children>
+                        <Text fill="#ff5500" fontSmoothingType="LCD" stroke="#ffa500" strokeDashOffset="5.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="5.0" text="My Library">
+                           <font>
+                              <Font name="Forte" size="60.0" />
+                           </font>
+                           <effect>
+                              <Reflection />
+                           </effect>
+                        </Text>
+                        <Text fill="#f4f6f8" fontSmoothingType="LCD" stroke="#ff7000" strokeDashOffset="5.0" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="3.0" text="    We are keep's future of the knowledge" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gadugi" size="25.0" />
+                           </font>
+                           <effect>
+                              <Reflection fraction="0.8" topOffset="10.0" topOpacity="0.83" />
+                           </effect>
+                        </Text>
+                     </children>
+                  </TextFlow>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f7f7f77f" height="436.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="420.0" AnchorPane.topAnchor="0.0" />
+            <VBox alignment="CENTER" layoutX="638.0" layoutY="2.0" prefHeight="415.0" prefWidth="380.0" spacing="20.0" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="2.0">
+               <children>
+                  <Button fx:id="imguserinitbtn" maxHeight="93.0" maxWidth="111.0" mnemonicParsing="false" onAction="#imguserinitbtn_pressed" prefHeight="93.0" prefWidth="111.0" style="-fx-background-color: rgba(1,1,1,0);-fx-border-color:rgba(0.3,0.3,0.3,1);-fx-border-width:1;" text="No Photo" textFill="#320202">
+                     <graphic>
+                     </graphic>
+                  </Button>
+                  <HBox alignment="CENTER_LEFT" prefHeight="6.0" prefWidth="380.0">
+                     <children>
+                        <BorderPane prefHeight="31.0" prefWidth="38.0" style="-fx-background-color: white; -fx-border-color: #b3b3b3; -fx-border-width: 1; -fx-background-radius: 10 0 0 10;">
+                           <center>
+                              <ImageView fitHeight="20.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@Image/login%20and%20signup.png" />
+                                 </image>
+                              </ImageView>
+                           </center>
+                        </BorderPane>
+                        <TextField fx:id="usernamefieldsign" prefHeight="31.0" prefWidth="347.0" promptText="Input your name" style="-fx-background-radius: 0 10 10 0; -fx-border-width: 0;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="197.0" prefHeight="6.0" prefWidth="380.0">
+                     <children>
+                        <BorderPane prefHeight="31.0" prefWidth="38.0" style="-fx-background-color: white; -fx-border-color: #b3b3b3; -fx-border-width: 1; -fx-background-radius: 10 0 0 10;">
+                           <center>
+                              <ImageView fitHeight="15.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@Image/email.png" />
+                                 </image>
+                              </ImageView>
+                           </center>
+                        </BorderPane>
+                        <TextField fx:id="emailfieldsign" prefHeight="31.0" prefWidth="347.0" promptText="Input your email" style="-fx-background-radius: 0 10 10 0; -fx-border-width: 0;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="233.0" prefHeight="6.0" prefWidth="380.0">
+                     <children>
+                        <BorderPane prefHeight="31.0" prefWidth="38.0" style="-fx-background-color: white; -fx-border-color: #b3b3b3; -fx-border-width: 1; -fx-background-radius: 10 0 0 10;">
+                           <center>
+                              <ImageView fitHeight="20.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@Image/lock.png" />
+                                 </image>
+                              </ImageView>
+                           </center>
+                        </BorderPane>
+                        <PasswordField fx:id="passwordfieldsign" prefHeight="31.0" prefWidth="342.0" promptText="Input your password" style="-fx-background-radius: 0 10 10 0;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="266.0" prefHeight="6.0" prefWidth="380.0">
+                     <children>
+                        <BorderPane prefHeight="31.0" prefWidth="38.0" style="-fx-background-color: white; -fx-border-color: #b3b3b3; -fx-border-width: 1; -fx-background-radius: 10 0 0 10;">
+                           <center>
+                              <ImageView fitHeight="20.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@Image/lock.png" />
+                                 </image>
+                              </ImageView>
+                           </center>
+                        </BorderPane>
+                        <PasswordField fx:id="passwordfieldretypesign" prefHeight="31.0" prefWidth="342.0" promptText="retype your password" style="-fx-background-radius: 0 10 10 0;" onKeyReleased="#key_typed_passwordfieldretypesign"/>
+                     </children>
+                  </HBox>
+                  <Button fx:id="signuserinitbtn" mnemonicParsing="false" onAction="#signuserinitbtn_pressed" prefHeight="47.0" prefWidth="189.0" style="-fx-background-color: rgba(0.4,0.4,0.4,0.4); -fx-background-radius: 20 20 20 20;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="signuserinitbtnvalidity" text="" style="-fx-text-fill:red;">
+    			  	<font>
+                        <Font name="Bodoni MT" size="20.0" />
+                    </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="79.0" prefWidth="1240.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="signupbackbtn" mnemonicParsing="false" onAction="#signupbackbtn_pressed" prefHeight="58.0" prefWidth="286.0" style="-fx-background-color: rgba(255,85,0,0.8);" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</fx:root>
+
+
